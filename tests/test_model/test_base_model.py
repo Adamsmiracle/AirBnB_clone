@@ -7,6 +7,11 @@ from models.base_model import BaseModel
 
 
 class TestBasemodel(unittest.TestCase):
+    """_summary_
+
+    Args:
+        unittest (model): _for testing the class_
+    """
     def test_init(self):
         my_model = BaseModel()
         self.assertIsNotNone(my_model.id)
@@ -14,6 +19,9 @@ class TestBasemodel(unittest.TestCase):
         self.assertIsNotNone(my_model.updated_at)
 
     def test_save(self):
+        """
+        test for the save function
+        """
         my_model = BaseModel()
 
         initial_updated_at = my_model.updated_at
@@ -21,6 +29,9 @@ class TestBasemodel(unittest.TestCase):
         self.assertNotEqual(initial_updated_at, current_updated_at)
 
     def test_to_dict(self):
+        """
+        test for the dict class
+        """
         my_model = BaseModel()
 
         my_model_dict = my_model.to_dict()
@@ -35,6 +46,9 @@ class TestBasemodel(unittest.TestCase):
                         my_model.updated_at.isoformat())
 
     def test_str(self):
+        """
+        test for the string representation class
+        """
         my_model = BaseModel()
         self.assertTrue(str(my_model).startswith("['BaseModel']"))
         
