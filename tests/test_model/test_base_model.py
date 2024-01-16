@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    
+This is the test for the base model class
 """
 import unittest
 from models.base_model import BaseModel
