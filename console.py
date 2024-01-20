@@ -5,7 +5,7 @@ model for the interface
 import cmd
 
 
-class HBnBcommand(cmd.Cmd):
+class HBNBCommand(cmd.Cmd):
     """
 
     Args:
@@ -34,4 +34,4 @@ class HBnBcommand(cmd.Cmd):
 
 
 if __name__ == "__main__":
-    HBnBcommand().cmdloop()
+    HBNBCommand().cmdloop()
