@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-
+model for the interface
 """
 import cmd
 
@@ -27,7 +27,7 @@ class HBnBcommand(cmd.Cmd):
 
     def do_EOF(self, *args):
         """
-
+        function for the end of file
         """
         print()
         return True
