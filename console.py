@@ -5,6 +5,7 @@ model for the interface
 import cmd
 import shlex
 from models.base_model import BaseModel
+from models.user import User
 from models import storage
 import re
 import ast

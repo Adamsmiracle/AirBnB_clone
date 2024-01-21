@@ -50,8 +50,8 @@ class TestFileStorage(unittest.TestCase):
     def test_new_with_args(self):
         #test creating a new object with additional arguements
         # (should raise TypeError)
-        with self.assertRaises(TabError):
-            models.storage.new(BaseModel(), 1)
+        with self.assertRaises(TypeError):
+            models.storage.new(self,BaseModel())
             
     def test_new_with_None(self):
         #test creating a newe object with None (should raise attributeError)
